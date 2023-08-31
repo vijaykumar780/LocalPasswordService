@@ -11,7 +11,7 @@
 	<groupId>com.localpassword</groupId>
 	<artifactId>localpassword</artifactId>
 	<version>0.0.1</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>password</name>
 	<description>password app</description>
 	<properties>
