@@ -18,8 +18,7 @@ import org.springframework.context.annotation.PropertySources;
 @Log4j2
 public class Configs {
 
-    @Value("${gmailPassword}")
-    String gmailPassword;
+
 
 
 }

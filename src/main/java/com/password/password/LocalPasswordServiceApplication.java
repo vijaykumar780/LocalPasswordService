@@ -43,11 +43,11 @@ public class LocalPasswordServiceApplication {
 		//JSONObject jsonObject = new JSONObject("{"+responseEntity.toString().substring(responseEntity.toString().indexOf("<200,")+5, ));
 		String date = responseEntity.toString().substring(responseEntity.toString()
 				.indexOf("datetime: ")+10, responseEntity.toString().indexOf("+05:30")+6);
-		log.info("Time now {}", date);
+
 		LocalDateTime now = LocalDateTime.parse(date,
 				DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSSSSXXX"));
 		LocalTime timeNow = LocalTime.of(now.getHour(), now.getMinute(), now.getSecond());
-
+		log.info("Time now {}, {}", now, timeNow);
 
 		LocalTime localStartTime = LocalTime.of(9, 14, 59);
 		LocalTime localEndTime = LocalTime.of(15, 30, 1);
